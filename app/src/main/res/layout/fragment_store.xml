@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.StoreFragment"
+    android:id="@+id/layout_fragment_store">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/mallName1"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:letterSpacing="0.05"
+                android:text="VivoCity Mall"
+                android:textAllCaps="true"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/mallAddress1"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:letterSpacing="0.05"
+                android:text="123C VivoCity Mall #08-888\nSingapore 098585"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="@id/mallName1"
+                app:layout_constraintTop_toBottomOf="@id/mallName1" />
+
+            <TextView
+                android:id="@+id/mallNumber1"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:letterSpacing="0.05"
+                android:text="+65 1234 5678"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="@id/mallAddress1"
+                app:layout_constraintTop_toBottomOf="@id/mallAddress1" />
+
+            <Button
+                android:id="@+id/mallLocation1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Locate Us"
+                app:layout_constraintLeft_toLeftOf="@id/mallNumber1"
+                app:layout_constraintTop_toBottomOf="@id/mallNumber1" />
+
+            <TextView
+                android:id="@+id/mallName2"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:letterSpacing="0.05"
+                android:text="Raffles City"
+                android:textAllCaps="true"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@id/mallLocation1"
+                app:layout_constraintTop_toBottomOf="@id/mallLocation1" />
+
+            <TextView
+                android:id="@+id/mallAddress2"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:letterSpacing="0.05"
+                android:text="68 Raffles City #02-246\nSingapore 179101"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="@id/mallName2"
+                app:layout_constraintTop_toBottomOf="@id/mallName2" />
+
+            <TextView
+                android:id="@+id/mallNumber2"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:letterSpacing="0.05"
+                android:text="+65 5513 1893"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="@id/mallAddress2"
+                app:layout_constraintTop_toBottomOf="@id/mallAddress2" />
+
+            <Button
+                android:id="@+id/mallLocation2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Locate Us"
+                app:layout_constraintLeft_toLeftOf="@id/mallNumber2"
+                app:layout_constraintTop_toBottomOf="@id/mallNumber2" />
+
+            <TextView
+                android:id="@+id/mallName3"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:letterSpacing="0.05"
+                android:text="Compassone Mall"
+                android:textAllCaps="true"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@+id/mallLocation2"
+                app:layout_constraintTop_toBottomOf="@id/mallLocation2" />
+
+            <TextView
+                android:id="@+id/mallAddress3"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:letterSpacing="0.05"
+                android:text="2 Sengkang Square #B1-02\nSingapore 545078"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="@id/mallName3"
+                app:layout_constraintTop_toBottomOf="@id/mallName3" />
+
+            <TextView
+                android:id="@+id/mallNumber3"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:letterSpacing="0.05"
+                android:text="+65 5189 6598"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="@id/mallAddress3"
+                app:layout_constraintTop_toBottomOf="@id/mallAddress3" />
+
+            <Button
+                android:id="@+id/mallLocation3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:text="Locate Us"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/mallNumber3"
+                app:layout_constraintTop_toBottomOf="@id/mallNumber3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</ScrollView>

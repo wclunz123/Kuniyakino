@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.BookDetailFragment"
+    android:id="@+id/layout_fragment_book_detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/setImageURL"
+            android:layout_width="150dp"
+            android:layout_height="190dp"
+            android:src="@drawable/black"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/bookTitle"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Cracking the Coding Interview"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/priceSymbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#e74c3c"
+                app:layout_constraintLeft_toLeftOf="@id/bookTitle"
+                app:layout_constraintTop_toBottomOf="@id/bookTitle" />
+
+            <TextView
+                android:id="@+id/bookPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="25.99"
+                android:textColor="#e74c3c"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/priceSymbol"
+                app:layout_constraintTop_toTopOf="@id/priceSymbol" />
+
+
+            <TextView
+                android:id="@+id/bookDescription"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="This should be a longer text of description, which describes the book about it attributes and to give a brief summary of the book."
+                android:textColor="#000000"
+                android:textSize="15dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bookPrice" />
+
+
+            <TextView
+                android:id="@+id/bookAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Author: "
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@id/bookDescription"
+                app:layout_constraintTop_toBottomOf="@id/bookDescription" />
+
+            <TextView
+                android:id="@+id/bookAuthorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leonard Wong"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                app:layout_constraintLeft_toRightOf="@id/bookAuthor"
+                app:layout_constraintTop_toTopOf="@id/bookAuthor" />
+
+            <TextView
+                android:id="@+id/bookPublisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Publication: "
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@id/bookAuthor"
+                app:layout_constraintTop_toBottomOf="@id/bookAuthor" />
+
+            <TextView
+                android:id="@+id/bookPublisherName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pearson Inc."
+                android:textSize="15dp"
+                android:textStyle="italic"
+                app:layout_constraintLeft_toRightOf="@id/bookPublisher"
+                app:layout_constraintTop_toTopOf="@id/bookPublisher" />
+
+            <TextView
+                android:id="@+id/bookPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pages: "
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@id/bookPublisher"
+                app:layout_constraintTop_toBottomOf="@id/bookPublisher" />
+
+            <TextView
+                android:id="@+id/bookPageNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="475"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                app:layout_constraintLeft_toRightOf="@id/bookPage"
+                app:layout_constraintTop_toTopOf="@id/bookPage" />
+
+            <TextView
+                android:id="@+id/bookQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity: "
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@id/bookPage"
+                app:layout_constraintTop_toBottomOf="@id/bookPage" />
+
+            <TextView
+                android:id="@+id/bookQtyNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="65"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                app:layout_constraintLeft_toRightOf="@id/bookQty"
+                app:layout_constraintTop_toTopOf="@id/bookQty" />
+
+            <Button
+                android:id="@+id/addToCartBtn"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/black"
+                android:text="Add to Cart"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bookQty" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

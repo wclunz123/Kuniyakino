@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp" >
+
+    <ImageView
+        android:id="@+id/setImageURL"
+        android:layout_width="110dp"
+        android:layout_height="140dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:padding="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/crack" />
+
+    <TextView
+        android:id="@+id/bookTitle"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:text="Cracking the Coding Interview"
+        android:textSize="11dp"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/setImageURL"
+        app:layout_constraintTop_toBottomOf="@id/setImageURL" />
+
+    <TextView
+        android:id="@+id/priceSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        android:textColor="#008000"
+        app:layout_constraintLeft_toLeftOf="@id/bookTitle"
+        app:layout_constraintTop_toBottomOf="@id/bookTitle" />
+
+    <TextView
+        android:id="@+id/bookPriceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15.99"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        android:textColor="#008000"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintLeft_toRightOf="@id/priceSymbol"
+        app:layout_constraintTop_toBottomOf="@id/bookTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

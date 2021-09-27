@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/setImageURL"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:padding="10dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/crack" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/setImageURL" >
+
+        <TextView
+            android:id="@+id/bookTitle"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Cracking the Coding Interview"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/setImageURL"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/bookAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author: "
+            app:layout_constraintTop_toBottomOf="@id/bookTitle"
+            app:layout_constraintLeft_toLeftOf="@id/bookTitle" />
+
+        <TextView
+            android:id="@+id/bookAuthorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rayle Kevin"
+            app:layout_constraintTop_toTopOf="@id/bookAuthor"
+            app:layout_constraintLeft_toRightOf="@id/bookAuthor" />
+
+        <TextView
+            android:id="@+id/bookPublisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publisher: "
+            app:layout_constraintTop_toBottomOf="@id/bookAuthor"
+            app:layout_constraintLeft_toLeftOf="@id/bookAuthor" />
+
+        <TextView
+            android:id="@+id/bookPublisherName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pearson Inc."
+            app:layout_constraintTop_toTopOf="@id/bookPublisher"
+            app:layout_constraintLeft_toRightOf="@id/bookPublisher" />
+
+        <TextView
+            android:id="@+id/priceSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#008000"
+            app:layout_constraintLeft_toLeftOf="@id/bookPublisher"
+            app:layout_constraintTop_toBottomOf="@id/bookPublisher" />
+
+
+        <TextView
+            android:id="@+id/bookPriceValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15.99"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#008000"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintLeft_toRightOf="@id/priceSymbol"
+            app:layout_constraintTop_toTopOf="@id/priceSymbol" />
+
+        <ImageButton
+            android:id="@+id/deleteCartItemBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
